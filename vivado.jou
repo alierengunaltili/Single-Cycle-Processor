@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Dec 26 04:56:54 2020
+# Process ID: 9800
+# Current directory: C:/Users/Monster/Desktop/project_LASTBER
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11188 C:\Users\Monster\Desktop\project_LASTBER\project_LASTBER.xpr
+# Log file: C:/Users/Monster/Desktop/project_LASTBER/vivado.log
+# Journal file: C:/Users/Monster/Desktop/project_LASTBER\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Monster/Desktop/project_LASTBER/project_LASTBER.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183738904A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183738904A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Monster/Desktop/project_LASTBER/project_LASTBER.runs/impl_1/topDesign.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Monster/Desktop/project_LASTBER/project_LASTBER.runs/impl_1/topDesign.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Dec 26 11:48:07 2020
+# Process ID: 19820
+# Current directory: C:/Users/Monster/Desktop/project_LASTBER/project_LASTBER.runs/impl_1
+# Command line: vivado.exe -log topDesign.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source topDesign.tcl -notrace
+# Log file: C:/Users/Monster/Desktop/project_LASTBER/project_LASTBER.runs/impl_1/topDesign.vdi
+# Journal file: C:/Users/Monster/Desktop/project_LASTBER/project_LASTBER.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source topDesign.tcl -notrace
